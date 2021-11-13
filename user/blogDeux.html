@@ -1,0 +1,2029 @@
+<!DOCTYPE html>
+<html dir="ltr" style="transform: none;" lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ==== Document Title ==== -->
+    <title>Blog 2</title>
+
+    <!-- ==== Document Meta ==== -->
+    <meta name="author" content="ThemeLooks">
+    <meta name="description" content="Multipurpose Social Network HTML5 Template">
+    <meta name="keywords"
+        content="social media, social network, forum, shop, bootstrap, html5, css3, template, responsive, retina ready">
+
+    <!-- ==== Favicon ==== -->
+    <link rel="icon" href="http://themelooks.us/demo/socifly/html/favicon.png" type="image/png">
+
+    <!-- ==== Google Font ==== -->
+    <link rel="stylesheet" href="./static/css.css">
+
+    <!-- ==== Plugins Bundle ==== -->
+    <link rel="stylesheet" href="./static/plugins.css">
+
+    <!-- ==== Main Stylesheet ==== -->
+    <link rel="stylesheet" href="./static/style.css">
+
+    <!-- ==== Responsive Stylesheet ==== -->
+    <link rel="stylesheet"
+        href="./static/responsive-style.css">
+
+    <!-- ==== Color Scheme Stylesheet ==== -->
+    <link rel="stylesheet" href="./static/color-1.css"
+        id="changeColorScheme">
+
+    <!-- ==== Custom Stylesheet ==== -->
+    <link rel="stylesheet" href="./static/custom.css">
+
+    <!-- ==== HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries ==== -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style id="ccSwitcher">
+        #cColorSwitcher {
+            position: fixed;
+            top: 50%;
+            left: -220px;
+            z-index: 999;
+        }
+
+        .ccs--body {
+            float: left;
+            width: 220px;
+            padding: 14px 15px 20px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 10px 2px;
+        }
+
+        .ccs--body:before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 50px;
+            bottom: 0;
+            background-color: #fff;
+            z-index: 0;
+        }
+
+        .ccs--body>h6 {
+            position: relative;
+            margin: 0;
+            font-size: 16px;
+            line-height: 24px;
+            z-index: 1;
+        }
+
+        .ccs--body>ul {
+            margin: 0 -5px;
+            padding: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        .ccs--body>ul>li {
+            position: relative;
+            float: left;
+            width: 30px;
+            height: 30px;
+            margin: 10px 5px 0;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .ccs--body>ul>li>span:nth-child(1) {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .ccs--body>ul>li>span:nth-child(2) {
+            position: absolute;
+            top: 0;
+            right: -2px;
+            width: 20px;
+            height: 45px;
+        }
+
+        .ccs--toggle-btn {
+            float: right;
+            width: 50px;
+            padding: 15px 0px;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 100;
+            line-height: 22px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 10px 2px;
+        }
+    </style>
+    <style id="theia-sticky-sidebar-stylesheet-TSS">
+        .theiaStickySidebar:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body class="isScrolling" style="transform: none;" cz-shortcut-listen="true">
+
+    <!-- Preloader Start -->
+    <div id="preloader" style="display: none;">
+        <div class="preloader--inner"></div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Wrapper Start -->
+    <div class="wrapper" style="transform: none;">
+        <!-- Header Section Start -->
+        <header class="header--section style--1">
+            <!-- Header Topbar Start -->
+            <div class="header--topbar bg-black">
+                <div class="container">
+                    <!-- Header Topbar Links Start -->
+                    <ul class="header--topbar-links nav ff--primary float--left">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span>En</span>
+                                <i class="fa fa-caret-down"></i>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li class="active"><a href="#">En</a></li>
+                                <li><a href="#">Bn</a></li>
+                                <li><a href="#">In</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Header Topbar Links End -->
+
+                    <!-- Header Topbar Social Start -->
+                    <ul class="header--topbar-social nav float--left hidden-xs">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                    <!-- Header Topbar Social End -->
+
+                    <!-- Header Topbar Links Start -->
+                    <ul class="header--topbar-links nav ff--primary float--right">
+                        <li>
+                            <a href="http://themelooks.us/demo/socifly/html/cart.html" title="" data-toggle="tooltip"
+                                data-placement="bottom" data-original-title="Cart">
+                                <i class="fa fa-shopping-basket"></i>
+                                <span class="badge">3</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-link">
+                                <i class="fa mr--8 fa-user-o"></i>
+                                <span>My Account</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Header Topbar Links End -->
+                </div>
+            </div>
+            <!-- Header Topbar End -->
+
+            <!-- Header Navbar Start -->
+            <div id="sticky-wrapper" class="sticky-wrapper" style="height: 80px;">
+                <div class="header--navbar navbar bg-black" data-trigger="sticky" style="width: 1850px;">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#headerNav">
+                                <span class="sr-only">Toggle Navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                            <!-- Header Navbar Logo Start -->
+                            <div class="header--navbar-logo navbar-brand">
+                                <a href="http://themelooks.us/demo/socifly/html/index.html">
+                                    <img src="./static/logo-white.png"
+                                        class="normal" alt="">
+                                    <img src="./static/logo-black.png"
+                                        class="sticky" alt="">
+                                </a>
+                            </div>
+                            <!-- Header Navbar Logo End -->
+                        </div>
+
+                        <div id="headerNav" class="navbar-collapse collapse float--right">
+                            <!-- Header Nav Links Start -->
+                            <ul class="header--nav-links style--1 nav ff--primary">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <span>Home</span>
+                                        <i class="fa fa-caret-down"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a href="http://themelooks.us/demo/socifly/html/home-1.html"><span>Home
+                                                    Version 1</span></a></li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/home-2.html"><span>Home
+                                                    Version 2</span></a></li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/home-3.html"><span>Home
+                                                    Version 3</span></a></li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/home-4.html"><span>Home
+                                                    Version 4</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <span>Community</span>
+                                        <i class="fa fa-caret-down"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a
+                                                href="http://themelooks.us/demo/socifly/html/activity.html"><span>Activity</span></a>
+                                        </li>
+                                        <li><a
+                                                href="http://themelooks.us/demo/socifly/html/members.html"><span>Members</span></a>
+                                        </li>
+                                        <li><a
+                                                href="http://themelooks.us/demo/socifly/html/groups.html"><span>Groups</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <span>BBPress</span>
+                                        <i class="fa fa-caret-down"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a href="http://themelooks.us/demo/socifly/html/forums.html">Forums</a></li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/sub-forums.html">Sub
+                                                Forums</a></li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/topics.html">Topics</a></li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/topic-replies.html">Topic
+                                                Replies</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown megamenu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <span>Pages</span>
+                                        <i class="fa fa-caret-down"></i>
+                                    </a>
+
+                                    <div class="dropdown-menu">
+                                        <div class="row">
+                                            <ul class="col-md-2">
+                                                <li><a
+                                                        href="http://themelooks.us/demo/socifly/html/members.html">Members</a>
+                                                </li>
+                                                <li><a
+                                                        href="http://themelooks.us/demo/socifly/html/groups.html">Groups</a>
+                                                </li>
+                                                <li><a href="http://themelooks.us/demo/socifly/html/activity.html">Site
+                                                        Wide Activity</a></li>
+                                                <li><a
+                                                        href="http://themelooks.us/demo/socifly/html/member-activity-personal.html">Member
+                                                        Activity</a></li>
+                                                <li><a href="http://themelooks.us/demo/socifly/html/group-home.html">Group
+                                                        Activity</a></li>
+                                            </ul>
+
+                                            <ul class="col-md-2">
+                                                <li><a
+                                                        href="http://themelooks.us/demo/socifly/html/member-profile.html">Member
+                                                        Profile</a></li>
+                                                <li><a
+                                                        href="http://themelooks.us/demo/socifly/html/member-forum-topics.html">Member
+                                                        Forum</a></li>
+                                                <li><a
+                                                        href="http://themelooks.us/demo/socifly/html/member-media-all.html">Member
+                                                        Media</a></li>
+                                                <li><a href="http://themelooks.us/demo/socifly/html/group-forum.html">Group
+                                                        Forum</a></li>
+                                                <li><a href="http://themelooks.us/demo/socifly/html/group-media.html">Group
+                                                        Media</a></li>
+                                            </ul>
+
+                                            <ul class="col-md-2">
+                                                <li><a
+                                                        href="http://themelooks.us/demo/socifly/html/forums.html">Forums</a>
+                                                </li>
+                                                <li><a href="http://themelooks.us/demo/socifly/html/sub-forums.html">Sub
+                                                        Forums</a></li>
+                                                <li><a
+                                                        href="http://themelooks.us/demo/socifly/html/topics.html">Topics</a>
+                                                </li>
+                                                <li><a href="http://themelooks.us/demo/socifly/html/topic-replies.html">Topic
+                                                        Replies</a></li>
+                                                <li><a href="#">Dummy</a></li>
+                                            </ul>
+
+                                            <ul class="col-md-2">
+                                                <li><a
+                                                        href="http://themelooks.us/demo/socifly/html/products.html">Products</a>
+                                                </li>
+                                                <li><a
+                                                        href="http://themelooks.us/demo/socifly/html/product-details.html">Product
+                                                        Details</a></li>
+                                                <li><a href="http://themelooks.us/demo/socifly/html/cart.html">Cart</a>
+                                                </li>
+                                                <li><a
+                                                        href="http://themelooks.us/demo/socifly/html/checkout.html">Checkout</a>
+                                                </li>
+                                                <li><a href="#">Dummy</a></li>
+                                            </ul>
+
+                                            <ul class="col-md-2">
+                                                <li><a
+                                                        href="http://themelooks.us/demo/socifly/html/blog-sidebar-right.html">Blog
+                                                        Sidebar Right</a></li>
+                                                <li><a
+                                                        href="http://themelooks.us/demo/socifly/html/blog-sidebar-left.html">Blog
+                                                        Sidebar Left</a></li>
+                                                <li><a href="http://themelooks.us/demo/socifly/html/blog-details.html">Blog
+                                                        Details</a></li>
+                                                <li><a href="#">Dummy</a></li>
+                                                <li><a href="#">Dummy</a></li>
+                                            </ul>
+
+                                            <ul class="col-md-2">
+                                                <li><a
+                                                        href="http://themelooks.us/demo/socifly/html/about.html">About</a>
+                                                </li>
+                                                <li><a href="http://themelooks.us/demo/socifly/html/faq.html">FAQ</a>
+                                                </li>
+                                                <li><a
+                                                        href="http://themelooks.us/demo/socifly/html/contact.html">Contact</a>
+                                                </li>
+                                                <li><a href="http://themelooks.us/demo/socifly/html/coming-soon.html">Coming
+                                                        Soon</a></li>
+                                                <li><a href="http://themelooks.us/demo/socifly/html/404.html">404</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <span>Products</span>
+                                        <i class="fa fa-caret-down"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a href="http://themelooks.us/demo/socifly/html/products.html">Products</a>
+                                        </li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/product-details.html">Product
+                                                Details</a></li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/cart.html">Cart</a></li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/checkout.html">Checkout</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown active">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <span>Blog</span>
+                                        <i class="fa fa-caret-down"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li class="active"><a
+                                                href="http://themelooks.us/demo/socifly/html/blog-sidebar-right.html">Blog
+                                                Sidebar Right</a></li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/blog-sidebar-left.html">Blog
+                                                Sidebar Left</a></li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/blog-details.html">Blog
+                                                Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a
+                                        href="http://themelooks.us/demo/socifly/html/contact.html"><span>Contact</span></a>
+                                </li>
+                            </ul>
+                            <!-- Header Nav Links End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Navbar End -->
+        </header>
+        <!-- Header Section End -->
+
+        <!-- Page Header Start -->
+        <div class="page--header pt--60 pb--60 text-center bg--img" data-overlay="0.85"
+            style="background-image: url(&quot;img/page-header-img/bg.jpg&quot;);" data-rjs="2">
+            <div class="container">
+                <div class="title">
+                    <h2 class="h1 text-white">Blog</h2>
+                </div>
+
+                <ul class="breadcrumb text-gray ff--primary">
+                    <li><a href="http://themelooks.us/demo/socifly/html/home-1.html" class="btn-link">Home</a></li>
+                    <li class="active"><span class="text-primary">Blog</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- Page Wrapper Start -->
+        <section class="page--wrapper pt--80 pb--20" style="transform: none;">
+            <div class="container" style="transform: none;">
+                <div class="row" style="transform: none;">
+                    <!-- Main Content Start -->
+                    <div class="main--content col-md-8 pb--30" data-trigger="stickyScroll"
+                        style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+
+                        <div class="theiaStickySidebar"
+                            style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none;">
+                            <div class="main--content-inner">
+                                <div class="row MasonryRow" style="position: relative; height: 1683.48px;">
+                                    <div class="col-sm-6 col-xs-12 pb--30"
+                                        style="position: absolute; left: 0px; top: 0px;">
+                                        <!-- Post Item Start -->
+                                        <div class="post--item" data-scroll-reveal="bottom" data-sr-id="1"
+                                            style="visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+                                            <!-- Post Image Start -->
+                                            <div class="post--img">
+                                                <a href="http://themelooks.us/demo/socifly/html/blog-details.html"><img
+                                                        src="./static/post-item-01.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                            <!-- Post Image End -->
+
+                                            <!-- Post Info Start -->
+                                            <div class="post--info">
+                                                <!-- Post Meta Start -->
+                                                <div class="post--meta">
+                                                    <ul class="nav">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="./static/avatar-small-01.jpg"
+                                                                    alt="">
+                                                                <span>Robbie T. Poorman</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="mr--8 fa fa-calendar-o"></i>
+                                                                <span>25 Nov 2017</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="mr--8 fa fa-comments-o"></i>
+                                                                <span>0 Comment</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Post Meta End -->
+
+                                                <!-- Post Title Start -->
+                                                <div class="post--title mt--10">
+                                                    <h3 class="h6">
+                                                        <a href="http://themelooks.us/demo/socifly/html/blog-details.html"
+                                                            class="btn-link">This Is the Place I Was Telling You
+                                                            About</a>
+                                                    </h3>
+                                                </div>
+                                                <!-- Post Title End -->
+
+                                                <!-- Post Meta Start -->
+                                                <div class="post--meta">
+                                                    <ul class="nav">
+                                                        <li>
+                                                            <i class="mr--8 fa fa-folder-open-o"></i>
+
+                                                            <a href="#"><span>Travel</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <i class="mr--8 fa fa-tags"></i>
+
+                                                            <a href="#"><span>Lifestyle</span></a>
+                                                            <a href="#"><span>Study</span></a>
+                                                            <a href="#"><span>Walkout</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Post Meta End -->
+
+                                                <!-- Post Content Start -->
+                                                <div class="post--content text-darker mt--10">
+                                                    <p>Lorem Ipsum is simply
+                                                        dummy text of the printing and typesetting industry. Lorem Ipsum
+                                                        has
+                                                        been the industry's standard dummy text ever since the 1500s,
+                                                        when an
+                                                        unknown printer took a galley.</p>
+                                                </div>
+                                                <!-- Post Content End -->
+
+                                                <!-- Post Action Start -->
+                                                <div class="post--action text-darkest mt--8">
+                                                    <a href="http://themelooks.us/demo/socifly/html/blog-details.html"
+                                                        class="btn-link">Continue Reading<i
+                                                            class="ml--10 text-primary fa fa-caret-right"></i></a>
+                                                </div>
+                                                <!-- Post Action End -->
+                                            </div>
+                                            <!-- Post Info End -->
+                                        </div>
+                                        <!-- Post Item End -->
+                                    </div>
+
+                                    <div class="col-sm-6 col-xs-12 pb--30"
+                                        style="position: absolute; left: 390px; top: 0px;">
+                                        <!-- Post Item Start -->
+                                        <div class="post--item" data-scroll-reveal="bottom" data-sr-id="2"
+                                            style="visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+                                            <!-- Post Image Start -->
+                                            <div class="post--img">
+                                                <a href="http://themelooks.us/demo/socifly/html/blog-details.html"><img
+                                                        src="./static/post-item-02.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                            <!-- Post Image End -->
+
+                                            <!-- Post Info Start -->
+                                            <div class="post--info">
+                                                <!-- Post Meta Start -->
+                                                <div class="post--meta">
+                                                    <ul class="nav">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="./static/avatar-small-02.jpg"
+                                                                    alt="">
+                                                                <span>Carla W. Carter</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="mr--8 fa fa-calendar-o"></i>
+                                                                <span>05 Nov 2017</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="mr--8 fa fa-comments-o"></i>
+                                                                <span>3 Comments</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Post Meta End -->
+
+                                                <!-- Post Title Start -->
+                                                <div class="post--title mt--10">
+                                                    <h3 class="h6">
+                                                        <a href="http://themelooks.us/demo/socifly/html/blog-details.html"
+                                                            class="btn-link">Your guide to perfect rebranding</a>
+                                                    </h3>
+                                                </div>
+                                                <!-- Post Title End -->
+
+                                                <!-- Post Meta Start -->
+                                                <div class="post--meta">
+                                                    <ul class="nav">
+                                                        <li>
+                                                            <i class="mr--8 fa fa-folder-open-o"></i>
+
+                                                            <a href="#"><span>Creative</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <i class="mr--8 fa fa-tags"></i>
+
+                                                            <a href="#"><span>Design</span></a>
+                                                            <a href="#"><span>Art</span></a>
+                                                            <a href="#"><span>Drawing</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Post Meta End -->
+
+                                                <!-- Post Content Start -->
+                                                <div class="post--content text-darker mt--10">
+                                                    <p>Lorem Ipsum is simply
+                                                        dummy text of the printing and typesetting industry. Lorem Ipsum
+                                                        has
+                                                        been the industry's standard dummy text ever since the 1500s,
+                                                        when an
+                                                        unknown printer took a galley.</p>
+                                                </div>
+                                                <!-- Post Content End -->
+
+                                                <!-- Post Action Start -->
+                                                <div class="post--action text-darkest mt--8">
+                                                    <a href="http://themelooks.us/demo/socifly/html/blog-details.html"
+                                                        class="btn-link">Continue Reading<i
+                                                            class="ml--10 text-primary fa fa-caret-right"></i></a>
+                                                </div>
+                                                <!-- Post Action End -->
+                                            </div>
+                                            <!-- Post Info End -->
+                                        </div>
+                                        <!-- Post Item End -->
+                                    </div>
+
+                                    <div class="col-sm-6 col-xs-12 pb--30"
+                                        style="position: absolute; left: 390px; top: 454px;">
+                                        <!-- Post Item Start -->
+                                        <div class="post--item" data-scroll-reveal="bottom" data-sr-id="3"
+                                            style="visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">
+                                            <!-- Post Video Start -->
+                                            <div class="post--video">
+                                                <a href="http://themelooks.us/demo/socifly/html/blog-details.html"><img
+                                                        src="./static/post-item-03.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                            <!-- Post Video End -->
+
+                                            <!-- Post Info Start -->
+                                            <div class="post--info">
+                                                <!-- Post Meta Start -->
+                                                <div class="post--meta">
+                                                    <ul class="nav">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="./static/avatar-small-03.jpg"
+                                                                    alt="">
+                                                                <span>Carla W. Carter</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="mr--8 fa fa-calendar-o"></i>
+                                                                <span>30 Sep 2017</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="mr--8 fa fa-comments-o"></i>
+                                                                <span>0 Comment</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Post Meta End -->
+
+                                                <!-- Post Title Start -->
+                                                <div class="post--title mt--10">
+                                                    <h3 class="h6">
+                                                        <a href="http://themelooks.us/demo/socifly/html/blog-details.html"
+                                                            class="btn-link">Treat Your Pet's Skin the Way You Treat
+                                                            Your Own with Pet Caress + a Fun Twitter Party</a>
+                                                    </h3>
+                                                </div>
+                                                <!-- Post Title End -->
+
+                                                <!-- Post Meta Start -->
+                                                <div class="post--meta">
+                                                    <ul class="nav">
+                                                        <li>
+                                                            <i class="mr--8 fa fa-folder-open-o"></i>
+
+                                                            <a href="#"><span>Pets</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <i class="mr--8 fa fa-tags"></i>
+
+                                                            <a href="#"><span>Cat</span></a>
+                                                            <a href="#"><span>Dog</span></a>
+                                                            <a href="#"><span>Pet Care</span></a>
+                                                            <a href="#"><span>Animal</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Post Meta End -->
+
+                                                <!-- Post Content Start -->
+                                                <div class="post--content text-darker mt--10">
+                                                    <p>Lorem Ipsum is simply
+                                                        dummy text of the printing and typesetting industry. Lorem Ipsum
+                                                        has
+                                                        been the industry's standard dummy text ever since the 1500s,
+                                                        when an
+                                                        unknown printer took a galley.</p>
+                                                </div>
+                                                <!-- Post Content End -->
+
+                                                <!-- Post Action Start -->
+                                                <div class="post--action text-darkest mt--8">
+                                                    <a href="http://themelooks.us/demo/socifly/html/blog-details.html"
+                                                        class="btn-link">Continue Reading<i
+                                                            class="ml--10 text-primary fa fa-caret-right"></i></a>
+                                                </div>
+                                                <!-- Post Action End -->
+                                            </div>
+                                            <!-- Post Info End -->
+                                        </div>
+                                        <!-- Post Item End -->
+                                    </div>
+
+                                    <div class="col-sm-6 col-xs-12 pb--30"
+                                        style="position: absolute; left: 0px; top: 497px;">
+                                        <!-- Post Item Start -->
+                                        <div class="post--item" data-scroll-reveal="bottom" data-sr-id="4"
+                                            style="visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+                                            <!-- Post Info Start -->
+                                            <div class="post--info">
+                                                <!-- Post Meta Start -->
+                                                <div class="post--meta">
+                                                    <ul class="nav">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="./static/avatar-small-03.jpg"
+                                                                    alt="">
+                                                                <span>Rebeca R. Gosnell</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="mr--8 fa fa-calendar-o"></i>
+                                                                <span>12 Aug 2017</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="mr--8 fa fa-comments-o"></i>
+                                                                <span>0 Comment</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Post Meta End -->
+
+                                                <!-- Post Title Start -->
+                                                <div class="post--title mt--10">
+                                                    <h3 class="h6">
+                                                        <a href="http://themelooks.us/demo/socifly/html/blog-details.html"
+                                                            class="btn-link">Classroomscreen.com: A Web Tool Teachers
+                                                            and Students will LOVE lorem ipsum has been the industries
+                                                            unknow printer took galley</a>
+                                                    </h3>
+                                                </div>
+                                                <!-- Post Title End -->
+
+                                                <!-- Post Meta Start -->
+                                                <div class="post--meta">
+                                                    <ul class="nav">
+                                                        <li>
+                                                            <i class="mr--8 fa fa-folder-open-o"></i>
+
+                                                            <a href="#"><span>Technology</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <i class="mr--8 fa fa-tags"></i>
+
+                                                            <a href="#"><span>IT</span></a>
+                                                            <a href="#"><span>Innovation</span></a>
+                                                            <a href="#"><span>World</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Post Meta End -->
+
+                                                <!-- Post Action Start -->
+                                                <div class="post--action text-darkest mt--8">
+                                                    <a href="http://themelooks.us/demo/socifly/html/blog-details.html"
+                                                        class="btn-link">Continue Reading<i
+                                                            class="ml--10 text-primary fa fa-caret-right"></i></a>
+                                                </div>
+                                                <!-- Post Action End -->
+                                            </div>
+                                            <!-- Post Info End -->
+                                        </div>
+                                        <!-- Post Item End -->
+                                    </div>
+
+                                    <div class="col-sm-6 col-xs-12 pb--30"
+                                        style="position: absolute; left: 0px; top: 731px;">
+                                        <!-- Post Item Start -->
+                                        <div class="post--item" data-scroll-reveal="bottom" data-sr-id="5"
+                                            style="visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">
+                                            <!-- Post Image Start -->
+                                            <div class="post--img">
+                                                <a href="http://themelooks.us/demo/socifly/html/blog-details.html"><img
+                                                        src="./static/post-item-04.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                            <!-- Post Image End -->
+
+                                            <!-- Post Info Start -->
+                                            <div class="post--info">
+                                                <!-- Post Meta Start -->
+                                                <div class="post--meta">
+                                                    <ul class="nav">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="./static/avatar-small-04.jpg"
+                                                                    alt="">
+                                                                <span>Earl N. Kelly</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="mr--8 fa fa-calendar-o"></i>
+                                                                <span>25 Feb 2017</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="mr--8 fa fa-comments-o"></i>
+                                                                <span>0 Comment</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Post Meta End -->
+
+                                                <!-- Post Title Start -->
+                                                <div class="post--title mt--10">
+                                                    <h3 class="h6">
+                                                        <a href="http://themelooks.us/demo/socifly/html/blog-details.html"
+                                                            class="btn-link">Tasty Stuffed Potato Dumplings Vegan</a>
+                                                    </h3>
+                                                </div>
+                                                <!-- Post Title End -->
+
+                                                <!-- Post Meta Start -->
+                                                <div class="post--meta">
+                                                    <ul class="nav">
+                                                        <li>
+                                                            <i class="mr--8 fa fa-folder-open-o"></i>
+
+                                                            <a href="#"><span>Food</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <i class="mr--8 fa fa-tags"></i>
+
+                                                            <a href="#"><span>Recipes</span></a>
+                                                            <a href="#"><span>Potato</span></a>
+                                                            <a href="#"><span>Burger</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Post Meta End -->
+
+                                                <!-- Post Content Start -->
+                                                <div class="post--content text-darker mt--10">
+                                                    <p>Lorem Ipsum is simply
+                                                        dummy text of the printing and typesetting industry. Lorem Ipsum
+                                                        has
+                                                        been the industry's unknown printer took a galley.</p>
+                                                </div>
+                                                <!-- Post Content End -->
+
+                                                <!-- Post Action Start -->
+                                                <div class="post--action text-darkest mt--8">
+                                                    <a href="http://themelooks.us/demo/socifly/html/blog-details.html"
+                                                        class="btn-link">Continue Reading<i
+                                                            class="ml--10 text-primary fa fa-caret-right"></i></a>
+                                                </div>
+                                                <!-- Post Action End -->
+                                            </div>
+                                            <!-- Post Info End -->
+                                        </div>
+                                        <!-- Post Item End -->
+                                    </div>
+
+                                    <div class="col-sm-6 col-xs-12 pb--30"
+                                        style="position: absolute; left: 390px; top: 1054px;">
+                                        <!-- Post Item Start -->
+                                        <div class="post--item" data-scroll-reveal="bottom" data-sr-id="6"
+                                            style="visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">
+                                            <!-- Post Image Start -->
+                                            <div class="post--img">
+                                                <a href="http://themelooks.us/demo/socifly/html/blog-details.html"><img
+                                                        src="./static/post-item-05.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                            <!-- Post Image End -->
+
+                                            <!-- Post Info Start -->
+                                            <div class="post--info">
+                                                <!-- Post Meta Start -->
+                                                <div class="post--meta">
+                                                    <ul class="nav">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="./static/avatar-small-05.jpg"
+                                                                    alt="">
+                                                                <span>Anne S. McCoy</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="mr--8 fa fa-calendar-o"></i>
+                                                                <span>13 Jul 2017</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="mr--8 fa fa-comments-o"></i>
+                                                                <span>0 Comment</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Post Meta End -->
+
+                                                <!-- Post Title Start -->
+                                                <div class="post--title mt--10">
+                                                    <h3 class="h6">
+                                                        <a href="http://themelooks.us/demo/socifly/html/blog-details.html"
+                                                            class="btn-link">You Don't Need a Studio for Pro Portraits
+                                                            -- Make the Most of What You DO Have</a>
+                                                    </h3>
+                                                </div>
+                                                <!-- Post Title End -->
+
+                                                <!-- Post Meta Start -->
+                                                <div class="post--meta">
+                                                    <ul class="nav">
+                                                        <li>
+                                                            <i class="mr--8 fa fa-folder-open-o"></i>
+
+                                                            <a href="#"><span>Photography</span></a>
+                                                            <a href="#"><span>Discover</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <i class="mr--8 fa fa-tags"></i>
+
+                                                            <a href="#"><span>Photo</span></a>
+                                                            <a href="#"><span>Discovery</span></a>
+                                                            <a href="#"><span>Mountain</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Post Meta End -->
+
+                                                <!-- Post Content Start -->
+                                                <div class="post--content text-darker mt--10">
+                                                    <p>Lorem Ipsum is simply
+                                                        dummy text of the printing and typesetting industry. Lorem Ipsum
+                                                        has
+                                                        been the industry's unknown printer took a galley.</p>
+                                                </div>
+                                                <!-- Post Content End -->
+
+                                                <!-- Post Action Start -->
+                                                <div class="post--action text-darkest mt--8">
+                                                    <a href="http://themelooks.us/demo/socifly/html/blog-details.html"
+                                                        class="btn-link">Continue Reading<i
+                                                            class="ml--10 text-primary fa fa-caret-right"></i></a>
+                                                </div>
+                                                <!-- Post Action End -->
+                                            </div>
+                                            <!-- Post Info End -->
+                                        </div>
+                                        <!-- Post Item End -->
+                                    </div>
+
+                                    <div class="col-sm-6 col-xs-12 pb--30"
+                                        style="position: absolute; left: 0px; top: 1158px;">
+                                        <!-- Post Item Start -->
+                                        <div class="post--item" data-scroll-reveal="bottom" data-sr-id="7"
+                                            style="visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">
+                                            <!-- Post Audio Start -->
+                                            <div class="post--audio embed-responsive embed-responsive-16by9">
+                                                <iframe
+                                                    src="./static/a.html"></iframe>
+                                            </div>
+                                            <!-- Post Audio End -->
+
+                                            <!-- Post Info Start -->
+                                            <div class="post--info">
+                                                <!-- Post Meta Start -->
+                                                <div class="post--meta">
+                                                    <ul class="nav">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="./static/avatar-small-06.jpg"
+                                                                    alt="">
+                                                                <span>Randall E. Dempsey</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="mr--8 fa fa-calendar-o"></i>
+                                                                <span>17 Mar 2017</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="mr--8 fa fa-comments-o"></i>
+                                                                <span>0 Comment</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Post Meta End -->
+
+                                                <!-- Post Title Start -->
+                                                <div class="post--title mt--10">
+                                                    <h3 class="h6">
+                                                        <a href="http://themelooks.us/demo/socifly/html/blog-details.html"
+                                                            class="btn-link">Bodak Yellow Cardi B / @IAMCARDIB</a>
+                                                    </h3>
+                                                </div>
+                                                <!-- Post Title End -->
+
+                                                <!-- Post Meta Start -->
+                                                <div class="post--meta">
+                                                    <ul class="nav">
+                                                        <li>
+                                                            <i class="mr--8 fa fa-folder-open-o"></i>
+
+                                                            <a href="#"><span>Music</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <i class="mr--8 fa fa-tags"></i>
+
+                                                            <a href="#"><span>Audio</span></a>
+                                                            <a href="#"><span>Sound</span></a>
+                                                            <a href="#"><span>Audio</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Post Meta End -->
+
+                                                <!-- Post Content Start -->
+                                                <div class="post--content text-darker mt--10">
+                                                    <p>Lorem Ipsum is simply
+                                                        dummy text of the printing and typesetting industry. Lorem Ipsum
+                                                        has
+                                                        been the industry's unknown printer took a galley.</p>
+                                                </div>
+                                                <!-- Post Content End -->
+
+                                                <!-- Post Action Start -->
+                                                <div class="post--action text-darkest mt--8">
+                                                    <a href="http://themelooks.us/demo/socifly/html/blog-details.html"
+                                                        class="btn-link">Continue Reading<i
+                                                            class="ml--10 text-primary fa fa-caret-right"></i></a>
+                                                </div>
+                                                <!-- Post Action End -->
+                                            </div>
+                                            <!-- Post Info End -->
+                                        </div>
+                                        <!-- Post Item End -->
+                                    </div>
+
+                                    <div class="col-xs-12 pb--30" style="position: absolute; left: 0px; top: 1623px;">
+                                        <!-- Page Count Start -->
+                                        <div class="page--count">
+                                            <label class="ff--primary fs--14 fw--500 text-darker">
+                                                <span>Viewing</span>
+
+                                                <a href="#" class="btn-link"><i class="fa fa-caret-left"></i></a>
+                                                <input type="number" name="page-count" value="01"
+                                                    class="form-control form-sm">
+                                                <a href="#" class="btn-link"><i class="fa fa-caret-right"></i></a>
+
+                                                <span>of 68</span>
+                                            </label>
+                                        </div>
+                                        <!-- Page Count End -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="resize-sensor"
+                                style="position: absolute; inset: 0px; overflow: hidden; z-index: -1;visibility: hidden;">
+                                <div class="resize-sensor-expand"
+                                    style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1;visibility: hidden;">
+                                    <div
+                                        style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 790px; height: 1724px;">
+                                    </div>
+                                </div>
+                                <div class="resize-sensor-shrink"
+                                    style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1;visibility: hidden;">
+                                    <div
+                                        style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main Content End -->
+
+                    <!-- Main Sidebar Start -->
+                    <div class="main--sidebar col-md-4 pb--60" data-trigger="stickyScroll"
+                        style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+                        <!-- Widget Start -->
+
+                        <!-- Widget End -->
+
+                        <!-- Widget Start -->
+
+                        <!-- Widget End -->
+
+                        <!-- Widget Start -->
+
+                        <!-- Widget End -->
+
+                        <!-- Widget Start -->
+
+                        <!-- Widget End -->
+
+                        <!-- Widget Start -->
+
+                        <!-- Widget End -->
+                        <div class="theiaStickySidebar"
+                            style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none;">
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">Find A Buddy</h2>
+
+                                <!-- Buddy Finder Widget Start -->
+                                <div class="buddy-finder--widget">
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-xxs-12">
+                                                <div class="form-group">
+                                                    <label>
+                                                        <span class="text-darker ff--primary fw--500">I Am</span>
+
+                                                        <select name="gender" class="form-control form-sm"
+                                                            data-trigger="selectmenu" style="display: none;">
+                                                            <option value="male" selected="selected">Male</option>
+                                                            <option value="female">Female</option>
+                                                            <option value="other">Other</option>
+                                                        </select>
+                                                        <div class="custom-select-menu" tabindex="0"><span
+                                                                class="selection-made">Male</span>
+                                                            <ul data-select-name="gender" style="display: none;">
+                                                                <li data-option-value="male" class="selected">Male</li>
+                                                                <li data-option-value="female">Female</li>
+                                                                <li data-option-value="other">Other</li>
+                                                            </ul><input type="hidden" name="gender" value="male">
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-6 col-xxs-12">
+                                                <div class="form-group">
+                                                    <label>
+                                                        <span class="text-darker ff--primary fw--500">Looking For</span>
+
+                                                        <select name="lookingfor" class="form-control form-sm"
+                                                            data-trigger="selectmenu" style="display: none;">
+                                                            <option value="female" selected="selected">Female</option>
+                                                            <option value="male">Male</option>
+                                                            <option value="other">Other</option>
+                                                        </select>
+                                                        <div class="custom-select-menu" tabindex="0"><span
+                                                                class="selection-made">Female</span>
+                                                            <ul data-select-name="lookingfor" style="display: none;">
+                                                                <li data-option-value="female" class="selected">Female
+                                                                </li>
+                                                                <li data-option-value="male">Male</li>
+                                                                <li data-option-value="other">Other</li>
+                                                            </ul><input type="hidden" name="lookingfor" value="female">
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-6 col-xxs-12">
+                                                <div class="form-group">
+                                                    <label>
+                                                        <span class="text-darker ff--primary fw--500">Age</span>
+
+                                                        <select name="age" class="form-control form-sm"
+                                                            data-trigger="selectmenu" style="display: none;">
+                                                            <option value="18to25" selected="selected">18 to 25</option>
+                                                            <option value="25to30">25 to 30</option>
+                                                            <option value="30to35">30 to 35</option>
+                                                            <option value="35to40">35 to 40</option>
+                                                            <option value="40plus">40+</option>
+                                                        </select>
+                                                        <div class="custom-select-menu" tabindex="0"><span
+                                                                class="selection-made">18 to 25</span>
+                                                            <ul data-select-name="age" style="display: none;">
+                                                                <li data-option-value="18to25" class="selected">18 to 25
+                                                                </li>
+                                                                <li data-option-value="25to30">25 to 30</li>
+                                                                <li data-option-value="30to35">30 to 35</li>
+                                                                <li data-option-value="35to40">35 to 40</li>
+                                                                <li data-option-value="40plus">40+</li>
+                                                            </ul><input type="hidden" name="age" value="18to25">
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-6 col-xxs-12">
+                                                <div class="form-group">
+                                                    <label>
+                                                        <span class="text-darker ff--primary fw--500">City</span>
+
+                                                        <select name="city" class="form-control form-sm"
+                                                            data-trigger="selectmenu" style="display: none;">
+                                                            <option value="newyork" selected="selected">New York
+                                                            </option>
+                                                            <option value="California">California</option>
+                                                            <option value="Atlanta">Atlanta</option>
+                                                        </select>
+                                                        <div class="custom-select-menu" tabindex="0"><span
+                                                                class="selection-made">New York</span>
+                                                            <ul data-select-name="city" style="display: none;">
+                                                                <li data-option-value="newyork" class="selected">New
+                                                                    York</li>
+                                                                <li data-option-value="California">California</li>
+                                                                <li data-option-value="Atlanta">Atlanta</li>
+                                                            </ul><input type="hidden" name="city" value="newyork">
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12">
+                                                <div class="form-group">
+                                                    <label>
+                                                        <span class="text-darker ff--primary fw--500">Filter
+                                                            Country</span>
+
+                                                        <select name="city" class="form-control form-sm"
+                                                            data-trigger="selectmenu" style="display: none;">
+                                                            <option value="unitedstates" selected="selected">United
+                                                                States</option>
+                                                            <option value="australia">Australia</option>
+                                                            <option value="turkey">Turkey</option>
+                                                            <option value="vietnam">Vietnam</option>
+                                                        </select>
+                                                        <div class="custom-select-menu" tabindex="0"><span
+                                                                class="selection-made">United States</span>
+                                                            <ul data-select-name="city" style="display: none;">
+                                                                <li data-option-value="unitedstates" class="selected">
+                                                                    United States</li>
+                                                                <li data-option-value="australia">Australia</li>
+                                                                <li data-option-value="turkey">Turkey</li>
+                                                                <li data-option-value="vietnam">Vietnam</li>
+                                                            </ul><input type="hidden" name="city" value="unitedstates">
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-12">
+                                                <button type="submit" class="btn btn-primary">Search</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Buddy Finder Widget End -->
+                            </div>
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">Notice</h2>
+
+                                <!-- Text Widget Start -->
+                                <div class="text--widget">
+                                    <p>There are many variations of passages
+                                        of Lorem Ipsum available, but the majority have suffered alteration in
+                                        some look even slightly believable.</p>
+                                </div>
+                                <!-- Text Widget End -->
+                            </div>
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">Forums</h2>
+
+                                <!-- Links Widget Start -->
+                                <div class="links--widget">
+                                    <ul class="nav">
+                                        <li><a href="http://themelooks.us/demo/socifly/html/sub-forums.html">User
+                                                Interface Design<span>(12)</span></a></li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/sub-forums.html">Front-End
+                                                Engineering<span>(07)</span></a></li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/sub-forums.html">Web
+                                                Development<span>(37)</span></a></li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/sub-forums.html">Social
+                                                Media Marketing<span>(13)</span></a></li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/sub-forums.html">Content
+                                                Marketing<span>(28)</span></a></li>
+                                    </ul>
+                                </div>
+                                <!-- Links Widget End -->
+                            </div>
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">Archives</h2>
+
+                                <!-- Nav Widget Start -->
+                                <div class="nav--widget">
+                                    <ul class="nav">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-calendar-o"></i>
+                                                <span class="text">Jan - July 2017</span>
+                                                <span class="count">(86)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-calendar-o"></i>
+                                                <span class="text">Jan - Dce 2016</span>
+                                                <span class="count">(328)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-calendar-o"></i>
+                                                <span class="text">Jan - Dec 2015</span>
+                                                <span class="count">(427)</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Nav Widget End -->
+                            </div>
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">Advertisements</h2>
+
+                                <!-- Ad Widget Start -->
+                                <div class="ad--widget">
+                                    <a href="#">
+                                        <img src="./static/ad.jpg"
+                                            alt="" class="center-block">
+                                    </a>
+                                </div>
+                                <!-- Ad Widget End -->
+                            </div>
+                            <div class="resize-sensor"
+                                style="position: absolute; inset: 0px; overflow: hidden; z-index: -1;visibility: hidden;">
+                                <div class="resize-sensor-expand"
+                                    style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1;visibility: hidden;">
+                                    <div
+                                        style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 400px; height: 1360px;">
+                                    </div>
+                                </div>
+                                <div class="resize-sensor-shrink"
+                                    style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1;visibility: hidden;">
+                                    <div
+                                        style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main Sidebar End -->
+                </div>
+            </div>
+        </section>
+        <!-- Page Wrapper End -->
+
+        <!-- Footer Section Start -->
+        <footer class="footer--section">
+            <!-- Footer Widgets Start -->
+            <div class="footer--widgets pt--70 pb--20 bg-lightdark bg--img"
+                style="background-image: url(&quot;img/footer-img/footer-widgets-bg.png&quot;);" data-rjs="2">
+                <div class="container">
+                    <div class="row AdjustRow" style="position: relative; height: 441px;">
+                        <div class="col-md-3 col-xs-6 col-xxs-12 pb--60"
+                            style="position: absolute; left: 0px; top: 0px;">
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">About Us</h2>
+
+                                <!-- Text Widget Start -->
+                                <div class="text--widget">
+                                    <p>Ipsum is simply dummy text of the printing indusLorem Ipsum is simply dummy text
+                                        of the printing and typesetting industry.</p>
+
+                                    <p>There are many variations of
+                                        passages of Lorem Ipsum available, but the majority have suffered
+                                        alteration in some form, by injected humour, or randomised words which
+                                        don't look even slightly believable.</p>
+                                </div>
+                                <!-- Text Widget End -->
+                            </div>
+                            <!-- Widget End -->
+
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">Subscribe To Our Newsletter</h2>
+
+                                <!-- Newsletter Widget Start -->
+                                <div class="newsletter--widget style--1" data-form="validate">
+                                    <form
+                                        action="https://themelooks.us13.list-manage.com/subscribe/post?u=79f0b132ec25ee223bb41835f&amp;id=f4e0e93d1d"
+                                        method="post" name="mc-embedded-subscribe-form" target="_blank"
+                                        novalidate="novalidate">
+                                        <div class="input-group">
+                                            <input type="email" name="EMAIL" placeholder="Enter your emil address"
+                                                class="form-control" autocomplete="off" required="">
+
+                                            <div class="input-group-btn">
+                                                <button type="submit" class="btn-link"><i
+                                                        class="fa fa-send-o"></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Newsletter Widget End -->
+                            </div>
+                            <!-- Widget End -->
+                        </div>
+
+                        <div class="col-md-3 col-xs-6 col-xxs-12 pb--60"
+                            style="position: absolute; left: 292px; top: 0px;">
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">Recent Post</h2>
+
+                                <!-- Recent Posts Widget Start -->
+                                <div class="recent-posts--widget">
+                                    <ul class="nav">
+                                        <li>
+                                            <p class="date fw--300">
+                                                <a href="#"><i class="fa mr--8 fa-file-text-o"></i>19 Jan 2017</a>
+                                            </p>
+                                            <p class="title fw--700">
+                                                <a href="http://themelooks.us/demo/socifly/html/blog-details.html">I
+                                                    look at you and see the rest of my life in front</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="date fw--300">
+                                                <a href="#"><i class="fa mr--8 fa-file-text-o"></i>19 Jan 2017</a>
+                                            </p>
+                                            <p class="title fw--700">
+                                                <a href="http://themelooks.us/demo/socifly/html/blog-details.html">If I
+                                                    know what love is, it is because of you</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="date fw--300">
+                                                <a href="#"><i class="fa mr--8 fa-file-text-o"></i>19 Jan 2017</a>
+                                            </p>
+                                            <p class="title fw--700">
+                                                <a href="http://themelooks.us/demo/socifly/html/blog-details.html">At
+                                                    the touch of love everyone becomes a poet</a>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Recent Posts Widget End -->
+                            </div>
+                            <!-- Widget End -->
+
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">Tags</h2>
+
+                                <!-- Tags Widget Start -->
+                                <div class="tags--widget">
+                                    <ul class="nav">
+                                        <li><a href="#">BuddyPress</a></li>
+                                        <li><a href="#">HTML</a></li>
+                                        <li><a href="#">Music</a></li>
+                                        <li><a href="#">Technology</a></li>
+                                        <li><a href="#">Movies</a></li>
+                                        <li><a href="#">Photography</a></li>
+                                        <li><a href="#">WordPress</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Tags Widget End -->
+                            </div>
+                            <!-- Widget End -->
+                        </div>
+
+                        <div class="col-md-3 col-xs-6 col-xxs-12 pb--60"
+                            style="position: absolute; left: 585px; top: 0px;">
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">Some of Catagories</h2>
+
+                                <!-- Nav Widget Start -->
+                                <div class="nav--widget">
+                                    <ul class="nav">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-folder-o"></i>
+                                                <span class="text">Social Media</span>
+                                                <span class="count">(26)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-folder-o"></i>
+                                                <span class="text">Business Studies</span>
+                                                <span class="count">(06)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-folder-o"></i>
+                                                <span class="text">Technology</span>
+                                                <span class="count">(34)</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Nav Widget End -->
+                            </div>
+                            <!-- Widget End -->
+
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">From Archives</h2>
+
+                                <!-- Nav Widget Start -->
+                                <div class="nav--widget">
+                                    <ul class="nav">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-calendar-o"></i>
+                                                <span class="text">Jan - July 2017</span>
+                                                <span class="count">(86)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-calendar-o"></i>
+                                                <span class="text">Jan - Dce 2016</span>
+                                                <span class="count">(328)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-calendar-o"></i>
+                                                <span class="text">Jan - Dec 2015</span>
+                                                <span class="count">(427)</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Nav Widget End -->
+                            </div>
+                            <!-- Widget End -->
+                        </div>
+
+                        <div class="col-md-3 col-xs-6 col-xxs-12 pb--60"
+                            style="position: absolute; left: 877px; top: 0px;">
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">Forums</h2>
+
+                                <!-- Links Widget Start -->
+                                <div class="links--widget">
+                                    <ul class="nav">
+                                        <li><a href="http://themelooks.us/demo/socifly/html/sub-forums.html">User
+                                                Interface Design</a></li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/sub-forums.html">Front-End
+                                                Engineering</a></li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/sub-forums.html">Web
+                                                Development</a></li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/sub-forums.html">Social
+                                                Media Marketing</a></li>
+                                        <li><a href="http://themelooks.us/demo/socifly/html/sub-forums.html">Content
+                                                Marketing</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Links Widget End -->
+                            </div>
+                            <!-- Widget End -->
+
+                            <!-- Widget Start -->
+                            <div class="widget">
+                                <h2 class="h4 fw--700 widget--title">Useful Links</h2>
+
+                                <!-- Links Widget Start -->
+                                <div class="links--widget">
+                                    <ul class="nav">
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Membership Levels</a></li>
+                                        <li><a href="#">Shop</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Links Widget End -->
+                            </div>
+                            <!-- Widget End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Widgets End -->
+
+            <!-- Footer Extra Start -->
+            <div class="footer--extra bg-darker pt--30 pb--40 text-center">
+                <div class="container">
+                    <!-- Widget Start -->
+                    <div class="widget">
+                        <h2 class="h4 fw--700 widget--title">Recent Active Members</h2>
+
+                        <!-- Recent Active Members Widget Start -->
+                        <div class="recent-active-members--widget style--2">
+                            <div class="owl-carousel owl-loaded owl-drag owl-dots--1" data-owl-items="12"
+                                data-owl-nav="true" data-owl-speed="1200"
+                                data-owl-responsive="{&quot;0&quot;: {&quot;items&quot;: &quot;3&quot;}, &quot;481&quot;: {&quot;items&quot;: &quot;6&quot;}, &quot;768&quot;: {&quot;items&quot;: &quot;8&quot;}, &quot;992&quot;: {&quot;items&quot;: &quot;12&quot;}}">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="owl-stage-outer">
+                                    <div class="owl-stage"
+                                        style="transform: translate3d(-790px, 0px, 0px); transition: all 2.5s ease 0s; width: 2251px;">
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/02.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/03.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/04.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/05.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/06.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/07.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/08.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/09.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/10.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/11.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/12.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/13.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/01.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/02.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/03.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/04.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/05.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/06.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/07.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/08.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/09.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/10.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/11.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/12.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item active" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/13.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/01.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/02.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/03.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/04.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/05.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/06.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/07.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/08.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/09.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/10.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/11.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item cloned" style="width: 60.833px;">
+                                            <div class="img">
+                                                <a
+                                                    href="http://themelooks.us/demo/socifly/html/member-activity-personal.html"><img
+                                                        src="./static/12.jpg"
+                                                        alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-nav">
+                                    <div class="owl-prev"><i class="fa fa-caret-left"></i></div>
+                                    <div class="owl-next"><i class="fa fa-caret-right"></i></div>
+                                </div>
+                                <div class="owl-dots disabled"></div>
+                            </div>
+                        </div>
+                        <!-- Recent Active Members Widget End -->
+                    </div>
+                    <!-- Widget End -->
+                </div>
+            </div>
+            <!-- Footer Extra End -->
+
+            <!-- Footer Copyright Start -->
+            <div class="footer--copyright pt--30 pb--30 bg-darkest">
+                <div class="container">
+                    <div class="text fw--500 fs--14 text-center">
+                        <p>Copyright © Soci<span>fly</span>. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Copyright End -->
+        </footer>
+        <!-- Footer Section End -->
+    </div>
+    <!-- Wrapper End -->
+
+    <!-- Back To Top Button Start -->
+    <div id="backToTop">
+        <a href="#" class="btn"><i class="fa fa-caret-up"></i></a>
+    </div>
+    <!-- Back To Top Button End -->
+
+    <!-- ==== Plugins Bundle ==== -->
+    <script src="./static/plugins.js"></script>
+
+    <!-- ==== Color Switcher Plugin ==== -->
+    <script src="./static/color-switcher.js"></script>
+    <div id="cColorSwitcher" style="transform: translateY(-50%);" class="clearfix">
+        <div class="ccs--body">
+            <h6>Main Colors:</h6>
+            <ul>
+                <li data-file-path="css/colors/color-1.css"><span style="background-color: #1da1f2;"></span><span
+                        style="transform: rotate(45deg); background-color: transparent;"></span></li>
+                <li data-file-path="css/colors/color-2.css"><span style="background-color: #82b440;"></span><span
+                        style="transform: rotate(45deg); background-color: transparent;"></span></li>
+                <li data-file-path="css/colors/color-3.css"><span style="background-color: #ff5252;"></span><span
+                        style="transform: rotate(45deg); background-color: transparent;"></span></li>
+                <li data-file-path="css/colors/color-4.css"><span style="background-color: #e91e63;"></span><span
+                        style="transform: rotate(45deg); background-color: transparent;"></span></li>
+                <li data-file-path="css/colors/color-5.css"><span style="background-color: #f69323;"></span><span
+                        style="transform: rotate(45deg); background-color: transparent;"></span></li>
+                <li data-file-path="css/colors/color-6.css"><span style="background-color: #ffcb1a;"></span><span
+                        style="transform: rotate(45deg); background-color: transparent;"></span></li>
+                <li data-file-path="css/colors/color-7.css"><span style="background-color: #00b249;"></span><span
+                        style="transform: rotate(45deg); background-color: transparent;"></span></li>
+                <li data-file-path="css/colors/color-8.css"><span style="background-color: #d48b91;"></span><span
+                        style="transform: rotate(45deg); background-color: transparent;"></span></li>
+                <li data-file-path="css/colors/color-9.css"><span style="background-color: #179ea8;"></span><span
+                        style="transform: rotate(45deg); background-color: transparent;"></span></li>
+                <li data-file-path="css/colors/color-10.css"><span style="background-color: #8cbeb2;"></span><span
+                        style="transform: rotate(45deg); background-color: transparent;"></span></li>
+            </ul>
+        </div>
+        <div class="ccs--toggle-btn" style="background-color: rgb(29, 161, 242);"><i class="fa fa-paint-brush"></i>
+        </div>
+    </div>
+
+    <!-- ==== Main Script ==== -->
+    <script src="./static/main.js"></script>
+
+
+</body>
+
+</html>
